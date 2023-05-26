@@ -11,7 +11,11 @@ let team1=[];
 players.forEach(function (params) {
 	team1.push(params);
 })
-let cap1=person;
+const cap1={};
+for(let i in person){
+	cap1[i]=person[i];
+	
+}
 window.players = players;
 window.person = person;
 window.team = team;
